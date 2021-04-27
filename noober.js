@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', async function() {
     //dropoff location line 2 ("city, state _ zip")
     let dropoffLine2=`${json[i].dropoffLocation.city}, ${json[i].dropoffLocation.state}, ${json[i].dropoffLocation.zip}`
     // number of passengers in their party (store in memory)
-    let numberOfPassengers=ride.numberOfPassengers
+    let numberOfPassengers=json[i].numberOfPassengers
 
   // Use conditional logic to display level of service requested. Luxury "Noober Purple" always supercedes larger "Noober XL" requests.
   // if "Noober Purple" is requested, display "Noober Purple"
